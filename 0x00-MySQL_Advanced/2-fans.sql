@@ -2,11 +2,11 @@
 -- ordered by the number of (non-unique) fans
 
 SELECT
-	origin, SUM(fans) AS allfans
+	origin, SUM(fans) AS nbfans
 FROM
 	metal_bands
 GROUP BY
 	origin
 ORDER BY
-	allfans
+	nbfans
 DESC
